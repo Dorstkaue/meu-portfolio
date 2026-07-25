@@ -1,0 +1,103 @@
+.acordeon {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 8px;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+}
+
+.acordeon .trigger {
+    width: 100%;
+    padding: 1rem 2.5rem;
+
+    font-family: "Monoblock", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: transparent;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+
+.acordeon .trigger::after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url("/assets/icons/arrow-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 8px;
+  
+    transform: rotate(-90deg); 
+    transition: transform .3s ease, filter .3s ease;
+}
+
+
+.acordeon.open .trigger, 
+.acordeon .trigger:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+.acordeon.open .trigger::after,
+.acordeon .trigger:hover::after {
+    filter: invert(1);
+}
+
+
+.acordeon.open .trigger::after {
+   transform: rotate(90deg);
+}
+
+.acordeon .content-acordeon {
+    display: none;
+}
+
+.acordeon.open .content-acordeon {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.language,
+.acordeon .trigger-text,
+.acordeon .content-acordeon,
+.acordeon .content-acordeon ul,
+.acordeon .content-acordeon li {
+    font-family: "Monoblock", sans-serif;
+}
+
+.acordeon.open .content-acordeon ul:not(.portfolio-list, .exp-list){
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 16px 40px;
+    gap: 4rem;
+}
+
+
+.language {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.language::before {
+    content: "";
+    display: inline-block;
+    margin-right: 0.5rem;
+    background-image: url("/assets/icons/check.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+}

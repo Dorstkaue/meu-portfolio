@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  font-family: "open sans", sans-serif;
+}
+
+body{
+    background-color: #000000;
+    color: #ffffff;
+}    
+
+.main {
+    margin: 1rem;
+    padding: 12px;
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+
+@font-face {
+    font-family: "Monoblock";
+    src: url("/assets/fonts/Monoblock-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Monoblock";
+    src: url("/assets/fonts/Monoblock-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Monoblock";
+    src: url("/assets/fonts/Monoblock-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+.rodape{
+    text-align: center;
+    font-family: "monoblock", sans-serif;
+    font-size: 12px;
+}
+
+.user {
+    font-family: "monoblock", sans-serif;
+    font-weight: bold;
+}

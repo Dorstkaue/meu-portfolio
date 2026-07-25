@@ -1,0 +1,65 @@
+.portfolio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;            
+    padding: 1rem 2.5rem;
+    list-style: none;
+    list-style-type: none;
+}
+
+.portfolio-list .title{
+    font-family: "Monoblock", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.portfolio-list li{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+ 
+    text-decoration: none;
+}
+
+.acordeon .content-acordeon ul.portfolio-list li a{
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+}
+
+.acordeon.open .content-acordeon ul.portfolio-list li a:hover {
+    text-decoration: underline;
+}
+.portfolio-list .github::before{
+    content:"";
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 18px;
+    height: 18px;
+    background-image: url("/assets/icons/github-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: invert(1);
+}
+
+.portfolio-list .figma::before{
+    content:"";
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 18px;
+    height: 18px;
+    background-image: url("/assets/icons/figma-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.portfolio-list .pdf::before{
+    content:"";
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 18px;
+    height: 18px;
+    background-image: url("/assets/icons/pdf-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+

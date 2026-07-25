@@ -1,0 +1,204 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.foto-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px;
+}
+
+.foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.svg-girando {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  z-index: 1;
+
+  animation: girar 90s linear infinite;
+
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.content{
+    max-width: 600px;
+}
+
+.header .title {
+    text-align:left;
+    font-size: 2rem;
+    font-family: "Monoblock", sans-serif;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+.header .name {
+    font-family: "Monoblock", sans-serif;
+    font-weight: bold;
+
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+
+    animation: 
+        typing 2s steps(9) forwards;
+}
+
+.header .name::after {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    background: white;
+    margin-left: 5px;
+    animation: cursor .7s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes cursor {
+    50% {
+       opacity:0;
+    }
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.infos p {
+    margin: 4px;
+}
+
+.infos .job::before {
+    content:"";
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 12px;
+    height: 12px;
+    background-image: url("/assets/icons/person-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.infos .location::before {
+    content:"";
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 12px;
+    height: 12px;
+    background-image: url("/assets/icons/local-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.infos .phone::before {
+    content:"";
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 12px;
+    height: 12px;
+    background-image: url("/assets/icons/number-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.infos .email::before {
+    content:"";
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 12px;
+    height: 12px;
+    background-image: url("/assets/icons/email-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.infos .linkedin::before {
+    content:"";
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 12px;
+    height: 12px;
+    background-image: url("/assets/icons/linkedin-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.infos .github::before {
+    content:"";
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 12px;
+    height: 12px;
+    background-image: url("/assets/icons/github-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .foto-container {
+        margin: 1rem;
+    }
+
+    .foto {
+        width: 180px;
+        height: 180px;
+    }
+
+    .svg-girando {
+        width: 200px;
+        height: 200px;
+    }
+
+    .header .title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .infos {
+        margin-top: 1rem;
+        text-align:start
+    }
+}
