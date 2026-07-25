@@ -35,7 +35,7 @@
     margin-right: 0.5rem;
     width: 18px;
     height: 18px;
-    background-image: url("/assets/icons/github-icon.svg");
+    background-image: url("assets/icons/github-icon.svg");
     background-repeat: no-repeat;
     background-size: contain;
     filter: invert(1);
@@ -47,7 +47,7 @@
     margin-right: 0.5rem;
     width: 18px;
     height: 18px;
-    background-image: url("/assets/icons/figma-icon.svg");
+    background-image: url("assets/icons/figma-icon.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -58,7 +58,7 @@
     margin-right: 0.5rem;
     width: 18px;
     height: 18px;
-    background-image: url("/assets/icons/pdf-icon.svg");
+    background-image: url("assets/icons/pdf-icon.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
