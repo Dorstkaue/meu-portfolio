@@ -1,4 +1,15 @@
+.skills-list{
+    list-style: none;
+}
 .text{
     display: inline-block;
-    line-height: 1.6;
+    line-height: 1.5;
+    list-style-type: none;
+}
+
+@media (max-width: 768px){
+    .text{
+        margin-bottom: 28px;
+        list-style: none;
+    }
 }
